@@ -12,19 +12,17 @@
   height: 100%;
 }
 
-/* contact */
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  background: linear-gradient(to right, #312e2f 0%, #36292c 100%);
-  font-size: 12px;
-}
-
-body, button, input {
+body,
+button,
+input {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   letter-spacing: 1.4px;
@@ -249,3 +247,259 @@ body, button, input {
   }
 }
 
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+#color-1 {
+  background-color: #21272a;
+}
+
+.dark .bg-color-2 {
+  background-color: #0d1117;
+}
+
+.dark .bg-color-3 {
+  background-color: #121212;
+}
+
+
+.top-bar {
+  background-color: #b9b9b9;
+}
+
+
+
+
+
+@media (prefers-color-scheme: dark) {
+  .first-color {
+    background-color: rgb(37, 37, 37);
+  }
+
+  .card-button {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .card-button {
+    padding: 25px;
+    align-content: space-between;
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: black;
+  }
+
+  body {
+    background-color: #1d1d1d;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* General Styles for Column */
+  .column {
+    width: 50%;
+    position: relative;
+    min-height: 1px;
+    display: flex;
+    flex-direction: initial;
+    flex-wrap: initial;
+    justify-content: initial;
+    align-items: initial;
+    align-content: initial;
+    gap: initial;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 1;
+    order: 0;
+    align-self: auto;
+    box-sizing: border-box;
+  }
+
+  /* General Styles for Inner Container */
+  .inner-container {
+    padding: 0 0 0 10px;
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    box-sizing: border-box;
+  }
+
+  /* General Button Styles */
+  .button {
+    --widgets-spacing: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+    gap: normal;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 1;
+    order: 0;
+    align-self: auto;
+    box-sizing: border-box;
+  }
+
+  /* Button Link Styles */
+  .button a {
+    display: inline-block;
+    line-height: 16px;
+    background-color: #1d1d1d;
+    font-size: 16px;
+    padding: 20px 32px;
+    border-radius: 10px;
+    color: rgb(26, 19, 17);
+    fill: rgb(255, 255, 255);
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 100%;
+    box-shadow: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 2px solid rgb(26, 19, 17);
+  }
+
+  /* Button Span Styles */
+  .button span {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5px;
+    box-sizing: border-box;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Styles for Column */
+.column {
+  width: 50%;
+  position: relative;
+  min-height: 1px;
+  display: flex;
+  flex-direction: initial;
+  flex-wrap: initial;
+  justify-content: initial;
+  align-items: initial;
+  align-content: initial;
+  gap: initial;
+  flex-basis: auto;
+  flex-grow: 0;
+  flex-shrink: 1;
+  order: 0;
+  align-self: auto;
+  box-sizing: border-box;
+}
+
+/* General Styles for Inner Container */
+.inner-container {
+  padding: 0 0 0 10px;
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  box-sizing: border-box;
+}
+
+/* General Button Styles */
+.button {
+  --widgets-spacing: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: normal;
+  align-content: normal;
+  gap: normal;
+  flex-basis: auto;
+  flex-grow: 0;
+  flex-shrink: 1;
+  order: 0;
+  align-self: auto;
+  box-sizing: border-box;
+}
+
+/* Button Link Styles */
+.button a {
+  display: inline-block;
+  line-height: 16px;
+  background-color: #ffffff;
+  font-size: 16px;
+  padding: 20px 32px;
+  border-radius: 0;
+  color: rgb(26, 19, 17);
+  fill: rgb(255, 255, 255);
+  text-align: center;
+  transition: all 0.3s ease;
+  width: 100%;
+  box-shadow: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 2px solid rgb(26, 19, 17);
+}
+
+/* Button Span Styles */
+.button span {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 5px;
+  box-sizing: border-box;
+}

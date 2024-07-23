@@ -1,11 +1,9 @@
-/* Ensure all images have the same size */
 .data-carousel-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* Additional styles to ensure proper display */
 .data-carousel-item {
   position: relative;
   width: 100%;
@@ -247,7 +245,6 @@ input {
   }
 }
 
-
 body,
 html {
   height: 100%;
@@ -265,8 +262,6 @@ html {
   height: 100%;
 }
 
-
-
 #color-1 {
   background-color: #21272a;
 }
@@ -279,14 +274,9 @@ html {
   background-color: #121212;
 }
 
-
 .top-bar {
   background-color: #b9b9b9;
 }
-
-
-
-
 
 @media (prefers-color-scheme: dark) {
   .first-color {
@@ -310,26 +300,9 @@ html {
   }
 
   body {
-    background-color: #1d1d1d;
+    background-color: #322e2f;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* General Styles for Column */
   .column {
     width: 50%;
     position: relative;
@@ -349,7 +322,6 @@ html {
     box-sizing: border-box;
   }
 
-  /* General Styles for Inner Container */
   .inner-container {
     padding: 0 0 0 10px;
     display: flex;
@@ -360,7 +332,6 @@ html {
     box-sizing: border-box;
   }
 
-  /* General Button Styles */
   .button {
     --widgets-spacing: 20px;
     margin-bottom: 20px;
@@ -380,7 +351,6 @@ html {
     box-sizing: border-box;
   }
 
-  /* Button Link Styles */
   .button a {
     display: inline-block;
     line-height: 16px;
@@ -401,7 +371,6 @@ html {
     border: 2px solid rgb(26, 19, 17);
   }
 
-  /* Button Span Styles */
   .button span {
     display: flex;
     justify-content: center;
@@ -411,19 +380,6 @@ html {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* General Styles for Column */
 .column {
   width: 50%;
   position: relative;
@@ -443,7 +399,6 @@ html {
   box-sizing: border-box;
 }
 
-/* General Styles for Inner Container */
 .inner-container {
   padding: 0 0 0 10px;
   display: flex;
@@ -454,7 +409,6 @@ html {
   box-sizing: border-box;
 }
 
-/* General Button Styles */
 .button {
   --widgets-spacing: 20px;
   margin-bottom: 20px;
@@ -474,7 +428,6 @@ html {
   box-sizing: border-box;
 }
 
-/* Button Link Styles */
 .button a {
   display: inline-block;
   line-height: 16px;
@@ -493,9 +446,9 @@ html {
   font-weight: 600;
   text-transform: uppercase;
   border: 2px solid rgb(26, 19, 17);
+  border-radius: 10px;
 }
 
-/* Button Span Styles */
 .button span {
   display: flex;
   justify-content: center;

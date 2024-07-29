@@ -24,7 +24,10 @@ body {
   display: grid;
   place-items: center;
 }
-
+.center-heading {
+  text-align: center;
+  margin-top: 20px;
+}
 .page-content {
   display: grid;
   justify-content: space-evenly;

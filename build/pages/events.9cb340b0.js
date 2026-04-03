@@ -1,0 +1,2 @@
+var i;(i=jQuery).fn.timeline=function(){var t={id:i(this),item:i(this).find(".timeline-item"),activeClass:"timeline-item--active",img:".timeline__img"};t.item.eq(0).addClass(t.activeClass),t.item.length,i(window).scroll(function(){var e=i(this).scrollTop()+i(window).height()/2;t.item.each(function(s){var a=i(this).offset().top,l=i(this).height()+i(this).offset().top;e>=a&&e<=l&&(t.item.removeClass(t.activeClass),i(this).addClass(t.activeClass))})})},$("#timeline-1").timeline();
+//# sourceMappingURL=events.9cb340b0.js.map

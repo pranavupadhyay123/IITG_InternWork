@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll(".site-nav-card").forEach(e=>{let t=e.querySelector("[data-nav-toggle]"),a=e.querySelector("[data-site-nav]");t&&a&&t.addEventListener("click",()=>{let a=e.classList.toggle("is-open");t.setAttribute("aria-expanded",String(a))})});let e=document.body.dataset.page;e&&document.querySelectorAll(`.site-nav-link[data-nav-target="${e}"]`).forEach(e=>{e.classList.add("is-active")})});
+//# sourceMappingURL=index.53b4fd34.js.map

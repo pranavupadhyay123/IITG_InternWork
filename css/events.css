@@ -1,0 +1,205 @@
+.timeline {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 1400px;
+  position: relative;
+}
+
+.timeline__content-title {
+  font-weight: normal;
+  font-size: 48px;
+  margin: 10px;
+  transition: 0.4s;
+  padding: 0 10px;
+  box-sizing: border-box;
+  font-family: "Pathway Gothic One", sans-serif;
+  color: #000000;
+  -webkit-text-stroke: 2px #ffffff; /* Text border */
+}
+
+.timeline__content-desc {
+  margin: 0;
+  font-size: 24px;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  font-family: Cardo;
+  font-weight: normal;
+  line-height: 25px;
+}
+
+.timeline:before {
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  margin-left: -1px;
+  content: "";
+  background: rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 767px) {
+  .timeline:before {
+    left: 40px;
+  }
+}
+
+.timeline-item {
+  padding: 40px 0;
+  opacity: 0.3;
+  filter: blur(2px);
+  transition: 0.5s;
+  box-sizing: border-box;
+  width: calc(50% - 40px);
+  display: flex;
+  position: relative;
+  transform: translateY(-80px);
+}
+
+.timeline-item:before {
+  content: attr(data-text);
+  letter-spacing: 3px;
+  width: 100%;
+  position: absolute;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+  font-family: "Pathway Gothic One", sans-serif;
+  border-left: 2px solid rgb(0, 0, 0);
+  top: 70%;
+  margin-top: -5px;
+  padding-left: 15px;
+  opacity: 0;
+  right: calc(-100% - 56px);
+}
+
+.timeline-item:nth-child(even) {
+  align-self: flex-end;
+}
+
+.timeline-item:nth-child(even):before {
+  right: auto;
+  text-align: right;
+  left: calc(-100% - 56px);
+  padding-left: 0;
+  border-left: none;
+  padding-right: 15px;
+}
+
+.timeline-item--active {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0px);
+}
+
+.timeline-item--active:before {
+  top: 50%;
+  transition: 0.3s all 0.2s;
+  opacity: 1;
+}
+
+.timeline-item--active .timeline__content-title {
+  margin: -50px 0 20px 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .timeline-item {
+    align-self: baseline !important;
+    width: 100%;
+    padding: 0 30px 150px 80px;
+  }
+
+  .timeline-item:before {
+    left: 10px !important;
+    padding: 0 !important;
+    top: 50px;
+    text-align: center !important;
+    width: 60px;
+    border: none !important;
+  }
+
+  .timeline-item:last-child {
+    padding-bottom: 40px;
+  }
+}
+
+.timeline__img {
+  max-width: 100%;
+  box-shadow: 0 10px 15px rgba(0, 0, 0);
+}
+
+.timeline-container {
+  width: 100%;
+  position: relative;
+  padding: 80px 0;
+  transition: 0.3s ease 0s;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.timeline-container:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #FFFBF2;
+  content: "";
+}
+
+.timeline-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.timeline-header__title {
+  color: #000000;
+  font-size: 68px;
+  font-family: Cardo;
+  font-weight: normal;
+  margin: 0;
+}
+
+.timeline-header__subtitle {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 32px;
+  letter-spacing: 5px;
+  margin: 10px 0 0 0;
+  font-weight: normal;
+}
+
+.demo-footer {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.demo-footer a {
+  color: #000000;
+  display: inline-block;
+  font-family: Cardo;
+}
+
+/* Additional CSS for the Reach Me Button */
+.reach-me-button {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.reach-me-button:hover {
+  background-color: #2d3748;
+  color: #ffffff;
+}
+
+.reach-me-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(66, 153, 225, 0.6);
+}

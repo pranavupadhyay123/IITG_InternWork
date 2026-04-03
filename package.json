@@ -1,0 +1,17 @@
+{
+  "name": "intern_iitg",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel index.html pages/*.html",
+    "build": "parcel build index.html pages/*.html --dist-dir ./build",
+    "build:css": "tailwindcss -i ./css/tailwind-source.css -o ./css/global.css --config ./tailwind.config.js --minify"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.7.0",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
+  }
+}
